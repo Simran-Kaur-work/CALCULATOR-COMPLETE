@@ -1,0 +1,33 @@
+
+body{
+background-color: black;
+            font-family: arial;
+            font-weight: bold;
+            color: white;
+            font-size: 150%;
+        }
+        .btn{
+border-radius: 50%;
+color: white;
+background-color: grey;
+border: none;
+height: 40px;
+width: 40px;
+font-weight: bold;
+
+        }
+.btn-1{
+ border-radius: 50%;
+color: white;         
+background-color: orange;
+border: none;
+height: 40px;
+width: 40px;
+font-weight: bold;
+        }
+
+ .clear{
+height:50px;
+width:100px;
+border-radius: 5px;
+        }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9j</title>
+   <link href="10-calculator.css" rel="stylesheet">
+</head>
+<body>
+    <p>Calculator</p>
+
+    <p class="js-display-calculation"></p>
+
+    <p>
+    <button class="btn" onclick="UpdateCalculation('1'); ">1</button>
+    <button class="btn" onclick="UpdateCalculation('2');">2</button>
+    <button class="btn" onclick="UpdateCalculation('3');">3</button>
+    <button class="btn-1" onclick="UpdateCalculation('+');">+</button>
+</p>
+<p>
+    <button class="btn" onclick="UpdateCalculation('4');">4</button>
+    <button class="btn"  onclick="UpdateCalculation('5');">5</button>
+    <button class="btn" onclick="UpdateCalculation('6');">6</button>
+    <button class="btn-1" onclick="UpdateCalculation('-');">-</button>
+</p>
+<p>
+    <button class="btn" onclick="UpdateCalculation('7');">7</button>
+    <button class="btn" onclick="UpdateCalculation('8');">8</button>
+    <button class="btn" onclick="UpdateCalculation('9');">9</button>
+    <button class="btn-1" onclick="UpdateCalculation('*');">*</button>
+</p>
+<p>
+    <button class="btn" onclick="UpdateCalculation('0');">0</button>
+    <button class="btn" onclick="UpdateCalculation('.'); ">.</button>
+
+    <button class="btn" onclick="calculation=eval(calculation) ;
+    display();
+    // console.log(calculation);
+    
+    localStorage.setItem('calculation', calculation);
+    ">=</button>
+
+    <button class="btn-1" onclick="UpdateCalculation('/');">/</button>
+</p>
+    
+    <button calss="btn" onclick="calculation=''; 
+    display();
+    // console.log(calculation);
+localStorage.setItem('calculation', calculation);
+    ">Clear</button>
+
+
+
+    <script src="10-calculator.js"></script>
+</body>
+</html>
